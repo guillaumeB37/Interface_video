@@ -1,4 +1,32 @@
-.en-tete{
+* {
+  font-family: Arial;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-right-section {
+  border: 1px solid green;
+  display: flex;
+  gap: var(--gap, 3rem);
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-left-section {
+  border: 1px solid yellow;
+  margin: 2rem;
+}
+
+
+/*.en-tete{
     position: absolute;
     background-color:#626066 ;
     left: 100px;
@@ -10,10 +38,10 @@ h1{
     top: -13px;
     display: inline;
     font-family: Indie Flower, swap;
-    vertical-align: bottom;   
+    vertical-align: bottom;
 }
 body{
-    background-color: black;
+    background-color: none;
     margin: 0;
 }
 
@@ -37,4 +65,4 @@ input{
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
-}
+}*/
