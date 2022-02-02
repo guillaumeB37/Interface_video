@@ -1,0 +1,40 @@
+.en-tete{
+    position: absolute;
+    background-color:#626066 ;
+    left: 100px;
+    right: 100px;
+}
+h1{
+    position: relative;
+    color:#5187F5;
+    top: -13px;
+    display: inline;
+    font-family: Indie Flower, swap;
+    vertical-align: bottom;   
+}
+body{
+    background-color: black;
+    margin: 0;
+}
+
+.logo{
+    text-decoration: none;
+}
+.logo h1:hover{
+    text-decoration: underline;
+}
+input{
+    position: absolute;
+    right: 10px;
+    top: 29px;
+}
+.menubar{
+    display: inline-block;
+    position: relative;
+    top: -40px;
+    width: 100px;
+    background-color: aqua;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}
