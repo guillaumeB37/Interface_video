@@ -6,7 +6,7 @@
 body {
   display: grid;
   overflow-x: hidden;
-  background-color: #1F2429;
+  background-color: #140D0D;
 }
 
 .flex {
@@ -54,22 +54,7 @@ input {
   color: black;
   border: none;
   width: 30vw;
-}
-
-.primary-center {
-  justify-content: center;
-  display: inline;
-  align-items: center;
-}
-
-.center-bar {
-  display: none;
-  list-style: none;
-  z-index: 1;
-  position: absolute;
-  width: 100vw;
-  height: 0.1vh;
-  background-color: white;
+  margin-right: 3em;
 }
 
 @supports (backdrop-filter: blur(1rem)) {
@@ -129,9 +114,6 @@ input {
    .mobile-nav-toggle[aria-expanded="true"] {
      background-image: url("./images/icon-close.svg");
    }
-   .center-bar {
-     display: none;
-   }
  }
 
 @media (min-width: 35em) {
@@ -142,31 +124,16 @@ input {
     .primary-header {
       padding-inline: 1em;
     }
-    .center-bar {
-      display: none;
-    }
 }
 
 @media (min-width: 45em) {
   .primary-header {
     padding-inline: 5em;
   }
-  .center-bar {
-    display: none;
-  }
 }
 
 @media (min-width: 70em) {
   .primary-header {
     padding-inline: 15em;
-  }
-  .center-bar {
-    display: none;
-  }
-}
-
-@media (min-width: 120em) {
-  .center-bar {
-    display: flex;
   }
 }
