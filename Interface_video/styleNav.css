@@ -26,6 +26,7 @@ body {
 .primary-logo {
   margin: 1rem;
   text-align: right;
+  z-index: 2;
 }
 
 .primary-logo .logo {
@@ -38,9 +39,10 @@ body {
 
 .primary-header {
   align-items: center;
-  justify-content: space-between;
+  justify-content: stretch;
 }
 .primary-navigation {
+  z-index: 1;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -48,17 +50,26 @@ body {
   background: hsl(0 0% 0% / 0.5);
 }
 
+input {
+  color: black;
+  border: none;
+  width: 30vw;
+}
+
 .primary-center {
+  justify-content: center;
+  display: inline;
   align-items: center;
 }
 
 .center-bar {
   display: none;
   list-style: none;
-  background: white;
-  height: 0.05em;
-  width: 35vw;
-  transform: translateX(7%);
+  z-index: 1;
+  position: absolute;
+  width: 100vw;
+  height: 0.1vh;
+  background-color: white;
 }
 
 @supports (backdrop-filter: blur(1rem)) {
