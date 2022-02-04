@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleNav.css">
-    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="stylesheet" href="styleBody.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
     <title>ALGO</title>
@@ -13,26 +13,23 @@
 <body class="home">
     <header class="primary-header flex">
       <div class="primary-logo">
-        <img src="./images/circleWhite.png" alt="Algo" class="logo">
+        <img src="./images/logo.JPG" alt="Algo" class="logo">
       </div>
 
       <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
         <span class="sr-only"></span>
       </button>
 
-      <nav class="primary-center flex">
-        <ul class="center-bar">
-          <li></li>
-        </ul>
+      <nav class="flex">
         <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
           <li class="active">
+            <li>
+              <input type="text" name="search" value="">
+            </li>
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Theme</a>
-          </li>
-          <li>
-            <input type="text" name="search" value="">
+            <a href="#">Menu</a>
           </li>
         </ul>
       </nav>
