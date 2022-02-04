@@ -6,7 +6,7 @@
 body {
   display: grid;
   overflow-x: hidden;
-  background-color: #140D0D;
+  background-color: black;
 }
 
 .flex {
@@ -25,12 +25,12 @@ body {
 
 .primary-logo {
   margin: 1rem;
-  text-align: right;
+  text-align: left;
   z-index: 2;
 }
 
 .primary-logo .logo {
-  width: 45%;
+  width: 20%;
 }
 
 .mobile-nav-toggle {
@@ -113,6 +113,9 @@ input {
 
    .mobile-nav-toggle[aria-expanded="true"] {
      background-image: url("./images/icon-close.svg");
+   }
+   .primary-logo .logo {
+     width: 15%;
    }
  }
 
