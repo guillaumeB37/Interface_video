@@ -8,4 +8,6 @@ document.querySelector('.switch_theme').addEventListener
   main.classList.toggle('dark');
   var button = document.getElementById("button-switch-theme");
   button.classList.toggle('bx-rotate-180')
-})
+});
+
+document.querySelector('.')
