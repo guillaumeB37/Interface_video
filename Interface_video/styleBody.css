@@ -26,7 +26,7 @@ body {
   color: black;
 }
 
-body.dark {
+body.darkMode {
   background-color: #1C1C1C;
   font-family: 'Poppins', sans-serif;
   color: #DCDCDC;
@@ -69,7 +69,7 @@ body.dark {
   text-align: center;
 }
 
-main.dark .switch_theme {
+body.darkMode .switch_theme {
   border: none;
   width: 4rem;
   height: 2.5rem;
@@ -87,11 +87,10 @@ main.dark .switch_theme {
 }
 
 
-main.dark .switch_logo {
+body.darkMode .switch_logo {
   color: white;
   font-size: 200%;
   text-align: center;
-  margin-bottom: 0.3rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -99,7 +98,7 @@ main.dark .switch_logo {
     margin-bottom: 6rem;
   }
 
-  main.dark .switch_theme {
+  body.darkMode .switch_theme {
     margin-bottom: 6rem;
   }
 }
