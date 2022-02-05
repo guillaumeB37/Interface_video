@@ -5,6 +5,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: 0.2s ease;
 }
 
 html {
@@ -20,7 +21,7 @@ a {
 }
 
 body {
-  background-color: #f1faff;
+  background-color: #EAF3F8;
   font-family: 'Poppins', sans-serif;
   color: black;
 }
@@ -41,13 +42,64 @@ body.dark {
   padding: 7rem 0 2rem;
 }
 
-.section_title {
-  font-size: 2.5rem;
-  color: #454343;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
 .section_height {
   height: 100vh;
+}
+
+.switch_theme {
+  border: none;
+  width: 4rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px black;
+  background: hsl(0 0% 100% / 0.5);
+  backdrop-filter: blur(1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+}
+
+.switch_logo {
+  color: black;
+  font-size: 200%;
+  text-align: center;
+}
+
+main.dark .switch_theme {
+  border: none;
+  width: 4rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px grey;
+  background: hsl(0 0% 40% / 0.5);
+  backdrop-filter: blur(0.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+}
+
+
+main.dark .switch_logo {
+  color: white;
+  font-size: 200%;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .switch_theme {
+    margin-bottom: 6rem;
+  }
+
+  main.dark .switch_theme {
+    margin-bottom: 6rem;
+  }
 }
