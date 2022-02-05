@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loader.css">
     <link rel="stylesheet" href="styleNav.css">
     <link rel="stylesheet" href="styleBody.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -52,12 +53,17 @@
         <i class='bx bx-toggle-right switch_logo' id="button-switch-theme"></i>
       </button>
 
-      <!--emplacement du carouselle-->
+      <!--emplacement de la page de chargement-->
+      <div class="loader_wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
 
 
     </section>
   </main>
 
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="theme.js" defer></script>
+<script type="text/javascript" src="loader.js" defer></script>
 </html>

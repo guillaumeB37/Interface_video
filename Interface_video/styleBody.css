@@ -61,7 +61,10 @@ body.darkMode {
   bottom: 0;
   right: 0;
   margin: 2rem;
+  cursor: pointer;
 }
+
+
 
 .switch_logo {
   color: black;
@@ -84,7 +87,7 @@ body.darkMode .switch_theme {
   bottom: 0;
   right: 0;
   margin: 2rem;
-
+  cursor: pointer;
 }
 
 
