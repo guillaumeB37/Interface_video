@@ -84,6 +84,7 @@ body.darkMode .switch_theme {
   bottom: 0;
   right: 0;
   margin: 2rem;
+
 }
 
 
@@ -91,6 +92,7 @@ body.darkMode .switch_logo {
   color: white;
   font-size: 200%;
   text-align: center;
+  margin-bottom: 0.3rem;
 }
 
 @media screen and (max-width: 768px) {
