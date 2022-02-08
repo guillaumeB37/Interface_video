@@ -1,0 +1,150 @@
+.slider {
+  width: 130%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 -15%;
+}
+
+@media screen and (max-width: 1300px) {
+  .slider {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    width: 80%;
+    height: 65%;
+    margin: auto;
+  }
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  display: flex;
+  width: 20%;
+  transition: 2s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide img.left {
+  width: 50%;
+}
+
+.slides input {
+  display: none;
+}
+
+/*css for manual navigation*/
+
+.navigation-manual {
+  position: relative;
+  width: 100%;
+  margin-top: -5%;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #454343;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+body.darkMode .manual-btn {
+  border: 2px solid #EAF3F8;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 1.5rem;
+}
+
+.manual-btn:hover {
+  background-color: #454343;
+}
+
+body.darkMode .manual-btn:hover {
+  background-color: #EAF3F8;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+.separator {
+  margin: 3rem -5%;
+  border: 2px solid #454343;
+  text-align: center;
+  width: 110%;
+  display: flex;
+  border-radius: 10px
+}
+
+body.darkMode .separator {
+  margin: 3rem -5%;
+  border: 2px solid #EAF3F8;
+  text-align: center;
+  width: 110%;
+  display: flex;
+  border-radius: 10px
+}
+
+@media screen and (max-width: 1024px) {
+  .separator {
+    width: 70%;
+    margin: 2rem auto;
+  }
+
+  body.darkMode .separator {
+    width: 70%;
+    margin: 2rem auto;
+  }
+}
+
+.tendance-1 {
+  text-decoration: none;
+}
+
+.tendance-1 h1 {
+  margin: 2rem 6rem;
+}
+
+.tendance-1 .switchLeft {
+  position: absolute;
+  left: 5%;
+}
+
+.tendance-1 .switchRight {
+  position: absolute;
+  right: 10%;
+}
