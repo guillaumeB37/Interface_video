@@ -101,25 +101,69 @@ body.darkMode .manual-btn:hover {
   margin-left: -60%;
 }
 
-.separator {
-  margin: 3rem -5%;
+.separator-circle-left{
   border: 2px solid #454343;
-  text-align: center;
-  width: 110%;
-  display: flex;
-  border-radius: 10px
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 1rem;
+  height: 1rem;
+  z-index: 11;
 }
 
-body.darkMode .separator {
-  margin: 3rem -5%;
+.separator-circle-right {
+  border: 2px solid #454343;
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 1rem;
+  height: 1rem;
+  z-index: 11;
+}
+
+.separator-line {
+  background-color: #454343;
+  border: 2px solid #454343;
+  border-radius: 5px;
+  justify-content: center;
+  width: 40rem;
+  height: 0.3rem;
+  z-index: 10;
+}
+.separator {
+  margin-block: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.darkMode .separator-line {
+  background-color: #EAF3F8;
   border: 2px solid #EAF3F8;
-  text-align: center;
-  width: 110%;
-  display: flex;
-  border-radius: 10px
+  border-radius: 5px;
+  justify-content: center;
+  width: 40rem;
+  height: 0.3rem;
+  z-index: 10;
 }
 
-@media screen and (max-width: 1024px) {
+body.darkMode .separator-circle-left {
+  border: 2px solid #EAF3F8;
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 1rem;
+  height: 1rem;
+  z-index: 11;
+}
+
+body.darkMode .separator-circle-right {
+  border: 2px solid #EAF3F8;
+  border-radius: 10px;
+  justify-content: space-between;
+  width: 1rem;
+  height: 1rem;
+  z-index: 11;
+}
+
+@media screen and (max-width: 1100px) {
   .separator {
     width: 70%;
     margin: 2rem auto;
@@ -131,20 +175,70 @@ body.darkMode .separator {
   }
 }
 
-.tendance-1 {
-  text-decoration: none;
+.tendance-1 i {
+  color: #454343;
+  font-size: 150%;
 }
 
 .tendance-1 h1 {
   margin: 2rem 6rem;
 }
 
-.tendance-1 .switchLeft {
+.btn-switch {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderButton {
+  cursor: pointer;
+}
+
+.btn-switch .middle-line {
+  border: 2px solid #454343;
+  border-radius: 10px;
+  height: 2%;
+  width: 100%;
+  margin-inline: 1%;
+}
+
+/*.tendance-1 .switchLeft {
   position: absolute;
-  left: 5%;
+  left: 10%;
 }
 
 .tendance-1 .switchRight {
   position: absolute;
   right: 10%;
+}*/
+
+.tendance-1-box {
+  display: inline-block;
+  margin-inline: 2rem;
+  height: 5%;
+  width: auto;
+  overflow: scroll;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.tendance-1-box img {
+  max-width: 200px;
+  min-width: 200px;
+  height: 50%;
+  margin-inline: 1%;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+.tendance-1-box img:hover {
+  transform: scale(1.4);
+  z-index: 2;
+}
+
+.tendance-2 h1 {
+  margin: 6rem 6rem;
 }
