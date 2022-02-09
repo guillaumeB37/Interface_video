@@ -1,24 +1,23 @@
-const sliders = document.querySelector(".tendance-1-box");
-var scrollPerClick;
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  spaceBetween: 5,
+  slidesPerView: 2,
+  loop: true,
+  freeMode: true,
+  loopAdditionalSlides: 5,
+  soeed: 500,
 
-var scrollAmount = 0;
-
-function sliderScrollLeft() {
-  sliders.scrollTo({
-    left: (scrollAmount -= scrollPerClick),
-    behavior: "smooth",
-  });
-
-  if(scrollAmount < 0) {
-    scrollAmount = 0;
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    /*when window width is >= 640px*/
+    640: {
+      slidesPerView: 5,
+      slidesPerGroup: 5,
+      freeMode: false,
+    }
   }
-}
-
-function sliderScrollRight() {
-  if (scrollAmount <= sliders.scrollWidth - sliders.clientWidth) {
-    sliders.scrollTo({
-      left: (scrollAmount += scrollPerClick),
-      behavior: "smooth",
-    });
-  }
-}
+});
