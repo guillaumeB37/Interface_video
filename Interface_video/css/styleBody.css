@@ -130,3 +130,8 @@ body.darkMode footer {
   background: black;
   height: auto;
 }
+
+footer p {
+  margin-left: 1%;
+  text-decoration: none;
+}
