@@ -14,9 +14,9 @@ const swiper = new Swiper('.swiper', {
   },
   breakpoints: {
     /*when window width is >= 640px*/
-    640: {
-      slidesPerView: 5,
-      slidesPerGroup: 5,
+    770: {
+      slidesPerView: 6,
+      slidesPerGroup: 2,
       freeMode: false,
     }
   }
