@@ -175,70 +175,119 @@ body.darkMode .separator-circle-right {
   }
 }
 
-.tendance-1 i {
+.thumbSection {
+
+
+}
+
+.thumbTitle {
+  font-size: 200%;
+  margin: 2rem 2rem;
   color: #454343;
-  font-size: 150%;
 }
 
-.tendance-1 h1 {
-  margin: 2rem 6rem;
+body.darkMode .thumbTitle {
+  font-size: 200%;
+  margin: 2rem 2rem;
+  color: #EAF3F8;
 }
 
-.btn-switch {
-  margin-top: 2%;
+.thumbTiles.swiper {
+  padding: 0 8%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.sliderButton {
-  cursor: pointer;
+.thumbTile {
+  width: 20%;
 }
 
-.btn-switch .middle-line {
-  border: 2px solid #454343;
-  border-radius: 10px;
-  height: 2%;
+.thumbTile_images {
   width: 100%;
-  margin-inline: 1%;
+  border-radius: 4px;
 }
 
-/*.tendance-1 .switchLeft {
-  position: absolute;
-  left: 10%;
+.thumbTiles .swiper-button-prev,
+.thumbTiles .swiper-button-next {
+  height: 100%;
+  width: 7.4%;
+  top: 0;
+  bottom: 0;
+  margin: 0;
 }
 
-.tendance-1 .switchRight {
-  position: absolute;
-  right: 10%;
-}*/
-
-.tendance-1-box {
-  display: inline-block;
-  margin-inline: 2rem;
-  height: 5%;
-  width: auto;
-  overflow: scroll;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
+.thumbTiles .swiper-button-prev {
+  left: 0;
 }
 
-.tendance-1-box img {
-  max-width: 200px;
-  min-width: 200px;
-  height: 50%;
-  margin-inline: 1%;
-  cursor: pointer;
-  transition: 0.5s ease;
-  z-index: 1;
+.thumbTiles .swiper-button-next {
+  right: 0;
 }
 
-.tendance-1-box img:hover {
-  transform: scale(1.4);
-  z-index: 2;
+.thumbTiles .swiper-button-prev::after,
+.thumbTiles .swiper-button-next::after {
+  color: black;
+  font-size: 4vw;
+  font-weight: bold;
+  transition: transform 0.1s ease-out
 }
 
-.tendance-2 h1 {
-  margin: 6rem 6rem;
+body.darkMode .swiper-button-prev::after {
+  color: white;
+  font-size: 4vw;
+  font-weight: bold;
+  transition: transform 0.1s ease-out
+}
+
+body.darkMode .swiper-button-next::after {
+  color: white;
+  font-size: 4vw;
+  font-weight: bold;
+  transition: transform 0.1s ease-out
+}
+
+@media screen and (min-width: 640px) {
+  .thumbTiles .swiper-button-prev::after,
+  .thumbTiles .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+    transition: 0.1s ease;
+  }
+
+  body.darkMode .swiper-button-prev::after {
+    display: none;
+    font-size: 2.4vw;
+    transition: 0.1s ease;
+  }
+  body.darkMode .swiper-button-next::after {
+    display: none;
+    font-size: 2.4vw;
+    transition: 0.1s ease;
+  }
+
+  .thumbTiles .swiper-button-prev:hover::after,
+  .thumbTiles .swiper-button-next:hover::after {
+    transform: scale(1.25);
+  }
+
+  .thumbTiles:hover .swiper-button-prev::after,
+  .thumbTiles:hover .swiper-button-next::after {
+    display: block;
+  }
+
+  .thumbTiles.swiper {
+    padding: 0 8%;
+    right: 0;
+    left: 0;
+  }
+
+  .thumbTile {
+    width: 20%;
+  }
+
+  .thumbTile_images {
+    width: 100%;
+    border-radius: 4px;
+  }
+
 }

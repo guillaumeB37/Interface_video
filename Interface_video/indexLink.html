@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/loader.css">
     <link rel="stylesheet" href="./css/styleNav.css">
     <link rel="stylesheet" href="./css/styleBody.css">
@@ -98,51 +99,115 @@
         <div class="separator-circle-right"></div>
       </div>
 
+      <!--slider tendances-->
+      <section class="thumbSection">
+        <h2 class="thumbTitle">Tendance 1</h2>
+        <!-- Slider main container -->
+        <div class="thumbTiles swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet2.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet3.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet2.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet3.png" alt="">
+              </a>
+            </div>
 
-      <div class="tendance-1">
-        <h1>Tendance 1</h1>
-        <div class="tendance-1-box">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="btn-switch">
-          <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><i class='bx bx-right-arrow bx-rotate-180' ></i></a>
-          <div class="middle-line"></div>
-          <a class="switchRight sliderButton" onclick="sliderScrollRight()"><i class='bx bx-right-arrow'></i></a>
+      </section>
+
+      <section class="thumbSection">
+        <h2 class="thumbTitle">Tendance 2</h2>
+        <!-- Slider main container -->
+        <div class="thumbTiles swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet2.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet3.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet2.png" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile_images"src="./images/swipper/sliderNet3.png" alt="">
+              </a>
+            </div>
+
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-      </div>
-      <div class="tendance-1">
-        <h1>Tendance 2</h1>
-        <div class="tendance-1-box">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
-          <img src="./images/netflix-slider/sliderNet.png" alt="">
-        </div>
-        <div class="btn-switch">
-          <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><i class='bx bx-right-arrow bx-rotate-180' ></i></a>
-          <div class="middle-line"></div>
-          <a class="switchRight sliderButton" onclick="sliderScrollRight()"><i class='bx bx-right-arrow'></i></a>
-        </div>
-      </div>
+      </section>
 
       <footer>
         <div class="footer">
+          <div class="name">
+            <p>Benjamin LECOMTE</p>
+            <p>Clement LEROULEY</p>
+            <p>Guillaume BRUNET</p>
+          </div>
 
         </div>
       </footer>
-
     </section>
   </main>
 
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="./js/theme.js" defer></script>
 <script type="text/javascript" src="./js/loader.js" defer></script>
 <script type="text/javascript" src="./js/carousel.js" defer></script>
