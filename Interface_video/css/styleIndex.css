@@ -1,7 +1,7 @@
 .slider {
   width: 130%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
   margin: 0 -15%;
 }
@@ -9,7 +9,7 @@
 @media screen and (max-width: 1300px) {
   .slider {
     width: 100%;
-    height: 80%;
+    height: 65%;
     margin: auto;
   }
 }
@@ -17,7 +17,7 @@
 @media screen and (max-width: 1024px) {
   .slider {
     width: 80%;
-    height: 65%;
+    height: 40%;
     margin: auto;
   }
 }
@@ -37,11 +37,9 @@
 .slide img {
   width: 100%;
   height: 100%;
+  z-index: 0;
 }
 
-.slide img.left {
-  width: 50%;
-}
 
 .left {
   background-color: black;
@@ -49,6 +47,11 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 5%;
+  z-index: 1;
+  box-shadow: 15px 0px 2px black;
+  border-radius: 10px;
+  display: table;
+  align-items: center;
 }
 
 
@@ -83,15 +86,8 @@
 }
 
 .manual-btn {
-  border: 2px solid #454343;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.5s ease;
-}
-
-body.darkMode .manual-btn {
-  border: 2px solid #EAF3F8;
+  z-index: 3;
+  border: 2px solid #FF7373;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -103,11 +99,7 @@ body.darkMode .manual-btn {
 }
 
 .manual-btn:hover {
-  background-color: #454343;
-}
-
-body.darkMode .manual-btn:hover {
-  background-color: #EAF3F8;
+  background-color: #FF7373;
 }
 
 #radio1:checked ~ .first{
