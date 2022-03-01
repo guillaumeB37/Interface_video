@@ -1,0 +1,86 @@
+<!-- ta page d'acceuil tu la name toujours index, ca permet quand tu veux heberger ton site d'indiqué quelle page il faut charger en première -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/styleNav.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/styleBody.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>ALGO</title>
+</head>
+<body class="home" id="body">
+<!--HEADER-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="indexLink.html" class="nav_logo">
+        <img src="./images/logo.png" alt="">
+        Algo
+      </a>
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_items">
+            <a href="indexLink.html" class="nav_link active_link">
+              <i class='bx bx-home-alt nav_icon'></i>
+              <span class="nav_name">Home</span>
+            </a>
+          </li>
+          <li class="nav_items">
+            <a href="categories.html" class="nav_link">
+              <i class='bx bx-collection nav_icon'></i>
+              <span class="nav_name">Categories</span>
+            </a>
+          </li>
+          <li class="nav_items">
+            <a href="about.html" class="nav_link">
+              <i class='bx bx-user nav_icon'></i>
+              <span class="nav_name">About</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--MAIN-->
+
+  <main class="" id="main">
+    <section class="container section section_height">
+
+      <button class="switch_theme" id="dark-mode-toggle">
+        <i class='bx bx-toggle-right switch_logo' id="button-switch-theme"></i>
+      </button>
+      <ch1>
+        <video class="video" controls>
+          <source src="https://www.youtube.com/watch?v=koRbYQyPU0U" type="video/mp4">
+        </video>
+        <div class="boite">
+          <h1>Nom de la vidéo</h1>
+          <p>paragraphe faisant le descrptif de la vidéo</p>
+        </div>
+      </ch1>
+      </section>
+
+      <footer>
+        <div class="footer">
+          <div class="name">
+            <p>Benjamin LECOMTE</p>
+            <p>Guillaume BRUNET</p>
+            <p>Clement LEROULEY</p>
+            
+        </div>
+      </div>
+    </footer>
+  </main>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/theme.js" defer></script>
+<script src="./js/loader.js" defer></script>
+<script src="./js/carousel.js" defer></script>
+<script src="./js/tendance-1.js" defer></script>
+</body>
+</html>
