@@ -40,4 +40,18 @@
     box-shadow: 4px 8px 6px rgb(34, 32, 32);
     cursor: pointer;
 }
-
+h2{
+    display: inline-block;
+}
+.description_button{
+    display: inline-block;
+    position: relative;
+    left: 50px;
+    border: 0px;
+    background-color: #757575;
+}
+.description_button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: x-large ;
+}
