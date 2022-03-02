@@ -108,7 +108,7 @@ footer {
   bottom: 0;
   background: white;
   height: 15%;
-  width: 110%;
+  width: 100%;
   display: inline-block;
   align-items: center;
 }
@@ -121,11 +121,11 @@ body.darkMode footer {
   bottom: 0;
   background: black;
   height: 15%;
-  width: 110%;
+  width: 100%;
 }
 
 footer p {
-  margin-left: 1%;
+  margin-left: 2%;
   text-decoration: none;
   font-size: 90%;
 }
