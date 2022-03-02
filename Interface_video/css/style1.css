@@ -1,12 +1,39 @@
 .video{
     width: 90%;
-    height: 85%;
+    height: 80%;
     border-radius: 20px;
     position: absolute;
     left: 0;
     margin-left : 5%;
+
 }
 
 .boite{
-    margin-top :60%;
+    margin-top :65%;
+    margin-bottom : 20%;
+    margin-left: -10%;
+}
+
+@media screen and (max-width: 1300px) {
+    .boite{
+        position:relative;
+        margin-top: 55%;
+        margin-bottom : 30%;
+        margin-left: 5%;
+    }
+    .video{
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .boite{
+        position:relative;
+        margin-top: 100%;
+        margin-bottom : 30%;
+        margin-left: 5%;
+    }
+    .video{
+        height: 70%;
+    }
 }
