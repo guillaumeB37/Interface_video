@@ -9,21 +9,9 @@
 }
 
 .boite{
-    margin-top :80%;
+    margin-top :90%;
     margin-bottom : 20%;
     margin-left: -10%;
-}
-
-@media screen and (max-width: 1300px) {
-    .boite{
-        position:relative;
-        margin-top: 55%;
-        margin-bottom : 30%;
-        margin-left: 5%;
-    }
-    .video{
-        height: 70%;
-    }
 }
 
 @media screen and (max-width: 770px) {
