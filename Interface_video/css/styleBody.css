@@ -134,6 +134,12 @@ footer p {
   padding-top: 1%;
 }
 
+.logo {
+  display: flex;
+  float: right;
+  margin-right: 2%;
+}
+
 @media screen and (max-width: 768px) {
   .switch_theme {
     margin-bottom: 6rem;
