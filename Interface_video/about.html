@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styleNav.css">
     <link rel="stylesheet" href="./css/styleBody.css">
+    <link rel="stylesheet" href="./css/About.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>ALGO</title>
 </head>
@@ -51,7 +52,57 @@
       <button class="switch_theme" id="dark-mode-toggle">
         <i class='bx bx-toggle-right switch_logo' id="button-switch-theme"></i>
       </button>
+      
+      <h1> Vous voulez nous contacter?<br>Complétez ce formulaire et nous vous répondrons avec plaisir.</h1>
+      <form action="" method="POST">
+        <div class="duo_champ">
+        
+          <div class="champ">
+            <label for="Nom">Nom:</label>
+            <input name="Nom" id="Nom" value="">
+          </div>
+          
+          <div class="champ">
+            <label for="Prénom">Prénom:</label>
+            <input name="Prenom" id="Prenom" value="">
+          </div>
+        </div>
+        <div>
+          <div class="champ">
+            <label for="Télephone">Téléphone:</label>
+            <input name="Telephone" id="Telephone" value="">
+          </div>
 
+          <div class="champ">
+            <label for="E-Mail">E-Mail:</label>
+            <input name="E-Mail" id="E-Mail" value="">
+          </div>
+        </div>
+        <div>
+          <label for="Adresse">Adresse:</label>
+            <input name="Adresse" id="Adresse" value="">
+        </div>
+        <div class="duo_champ">
+        
+          <div class="champ">
+            <label for="code_postal">Code Postal:</label>
+            <input name="Code_Postal" id="code_postal" value="">
+          </div>
+          
+          <div class="champ">
+            <label for="Ville">Ville:</label>
+            <input name="Ville" id="Ville" value="">
+          </div>
+        </div>
+        <div class="adresse_champ">
+          <label for="Message">Message:</label>
+            <textarea name="Message" id="Message" value="" placeholder="Entrez votre message..."></textarea>
+        </div>
+        <div class="bouton">
+          <button>Envoyer</button>
+        </div>
+        
+      </form>
       <!--emplacement des conditions generales-->
       <div class="cond-user">
         <h1>Conditions generales d'utilisation du site ALGO</h1>
