@@ -18,16 +18,19 @@ input{
     width: 376px;
 }
 #Message{
+    background-color: #EAF3F8;
     width: 376px;
     height: 200px;
     text-indent: 5px;
     
 }
+
 form{
     margin-left: 20%;
     margin-bottom: 10%;
     margin-top: 5%;
 }
+
 textarea{
     resize: vertical;
     margin-left: 20px;
