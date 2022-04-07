@@ -174,7 +174,7 @@ body.darkMode .active_link .nav_name {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .nav_menu {
     position: fixed;
     bottom: 0;
