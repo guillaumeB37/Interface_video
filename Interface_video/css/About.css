@@ -24,7 +24,7 @@ input{
     
 }
 form{
-    margin-left: 20%;
+    margin-left: 25%;
     margin-bottom: 10%;
     margin-top: 5%;
 }
@@ -47,4 +47,7 @@ button:hover{
 button:active{
     background-color: grey;
     color: white;
+}
+.redstar{
+    color:red
 }

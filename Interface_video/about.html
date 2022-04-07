@@ -52,30 +52,30 @@
       <button class="switch_theme" id="dark-mode-toggle">
         <i class='bx bx-toggle-right switch_logo' id="button-switch-theme"></i>
       </button>
-      
+      <!--Formulaire créé par Guillaume Brunet-->
       <h1> Vous voulez nous contacter?<br>Complétez ce formulaire et nous vous répondrons avec plaisir.</h1>
-      <form action="" method="POST">
+      <form action="./php/index.php" method="POST">
         <div class="duo_champ">
         
           <div class="champ">
-            <label for="Nom">Nom:</label>
-            <input name="Nom" id="Nom" value="">
+            <label for="Nom">Nom: <span class="redstar">*</span></label>
+            <input name="Nom" id="Nom" value="" required="required">
           </div>
           
           <div class="champ">
-            <label for="Prénom">Prénom:</label>
-            <input name="Prenom" id="Prenom" value="">
+            <label for="Prénom">Prénom: <span class="redstar">*</span></label>
+            <input name="Prenom" id="Prenom" value="" required="required">
           </div>
         </div>
         <div>
           <div class="champ">
-            <label for="Télephone">Téléphone:</label>
-            <input name="Telephone" id="Telephone" value="">
+            <label for="Télephone">Téléphone: <span class="redstar">*</span></label>
+            <input name="Telephone" id="Telephone" value="" required="required">
           </div>
 
           <div class="champ">
-            <label for="E-Mail">E-Mail:</label>
-            <input name="E-Mail" id="E-Mail" value="">
+            <label for="E-Mail">E-Mail: <span class="redstar">*</span></label>
+            <input name="E-Mail" id="E-Mail" value="" required="required">
           </div>
         </div>
         <div>
@@ -85,24 +85,25 @@
         <div class="duo_champ">
         
           <div class="champ">
-            <label for="code_postal">Code Postal:</label>
-            <input name="Code_Postal" id="code_postal" value="">
+            <label for="code_postal">Code Postal: <span class="redstar">*</span></label>
+            <input name="Code_Postal" id="code_postal" value="" required="required">
           </div>
           
           <div class="champ">
-            <label for="Ville">Ville:</label>
-            <input name="Ville" id="Ville" value="">
+            <label for="Ville">Ville: <span class="redstar">*</span></label>
+            <input name="Ville" id="Ville" value="" required="required">
           </div>
         </div>
         <div class="adresse_champ">
-          <label for="Message">Message:</label>
-            <textarea name="Message" id="Message" value="" placeholder="Entrez votre message..."></textarea>
+          <label for="Message">Message: <span class="redstar">*</span></label>
+            <textarea name="Message" id="Message" value="" placeholder="Entrez votre message..." required="required"></textarea>
         </div>
         <div class="bouton">
           <button>Envoyer</button>
         </div>
         
       </form>
+      <!--Fin du formulaire -->
       <!--emplacement des conditions generales-->
       <div class="cond-user">
         <h1>Conditions generales d'utilisation du site ALGO</h1>
